@@ -3,7 +3,7 @@ Simple calculator made using React and Chakra UI.
 
 # Demo
 Try out the app at (link here)
-! [Calculator Demo] (demo/calculator.gif)
+![Calculator Demo] (demo/calculator.gif)
 
 # Usage
 To run the project locally in development mode:
@@ -11,4 +11,4 @@ To run the project locally in development mode:
 * `$ cd react-calculator`
 * Run `$ npm install` to install dependencies
 * Run `$ npm start`
-* Open `localhost:3000` in the browser
+* Open `localhost:3000` in your browser
