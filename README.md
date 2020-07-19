@@ -3,7 +3,7 @@ Simple calculator made using React and Chakra UI.
 
 # Demo
 Try it out at (link here)
-![Calculator Demo GIF] (demo/calculator.gif)
+![Calculator Demo GIF](demo/calculator.gif)
 
 # Usage
 To run the project locally in development mode:
