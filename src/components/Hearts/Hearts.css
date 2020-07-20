@@ -1,0 +1,34 @@
+.artContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .heart {
+    height: 22px;
+    width: 24px;
+    position: relative;
+    left: 6px;
+    margin: 1px;
+    z-index: 5;
+  }
+  
+  .heart:before,
+  .heart:after {
+    height: 20px;
+    width: 12px;
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 0;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    background-color: rgb(252, 252, 170);
+  }
+  
+  .heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }

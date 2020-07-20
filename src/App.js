@@ -16,11 +16,6 @@ function App() {
           padding="10px"
         >Simple Calculator</Text>
         <Calculator />
-        <div className="artContainer">
-          <div className="heart"></div>
-          <div className="heart"></div>
-          <div className="heart"></div>
-        </div>
       </div>
     </ThemeProvider>
   );

@@ -1,6 +1,8 @@
 import React from 'react';
 import {Button} from "@chakra-ui/core";
 
+import Hearts from './Hearts/Hearts';
+
 const buttonStyling = {
     variantColor: "pink",
     variant: "solid",
@@ -12,19 +14,21 @@ const buttonStyling = {
 const CalculatorButtons = (props) => {
     return(
    <div>
-    <Button
-        {...buttonStyling}
-        variantColor="purple"
-        name="CE"
-        onClick={e => props.onClick(e.target.name)}
-    >CE</Button>
-    <Button
-        {...buttonStyling}
-        variantColor="purple"
-        name="C"
-        onClick={e => props.onClick(e.target.name)}
-    >C</Button>
-    <br />
+    <div style={{display: 'flex', flexDirection: 'row'}}>
+        <Button
+            {...buttonStyling}
+            variantColor="purple"
+            name="CE"
+            onClick={e => props.onClick(e.target.name)}
+        >CE</Button>
+        <Button
+            {...buttonStyling}
+            variantColor="purple"
+            name="C"
+            onClick={e => props.onClick(e.target.name)}
+        >C</Button>
+        <Hearts />
+    </div>
     <Button
         {...buttonStyling}
         name="7"
