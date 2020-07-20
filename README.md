@@ -1,8 +1,7 @@
 # React Calculator
 Simple calculator made using React and Chakra UI.
 
-# Demo
-Try it out at (link here)   
+# Demo   
 ![Calculator Demo GIF](demo/calculator.gif)
 
 # Usage
