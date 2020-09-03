@@ -20,6 +20,7 @@ const NavBar = () => {
                 variantColor={colorMode === "light" ? "pink" : "teal"}
                 leftIcon={colorMode === "light" ? "moon" : FaHeart}
                 size="sm"
+                fontSize={["lg", "md"]}
                 marginLeft="auto"
                 zIndex="999"
                 onClick={toggleColorMode}
@@ -29,6 +30,7 @@ const NavBar = () => {
             <IconButton
                 variantColor="purple"
                 icon={GoMarkGithub}
+                fontSize={["lg", "md"]}
                 size="sm"
                 marginLeft="6px"
                 zIndex="999"

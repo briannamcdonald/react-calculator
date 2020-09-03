@@ -1,8 +1,6 @@
 .calculator {
     background-color: lightpink;
-    padding: 10px;
     display: inline-block;
-    border-radius: 4px;
     margin: 0 10px 10px 10px;
     text-align: left;
 }

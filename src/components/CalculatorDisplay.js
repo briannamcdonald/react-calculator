@@ -1,15 +1,15 @@
 import React from 'react';
 
-import {Text} from '@chakra-ui/core';
+import { Text } from '@chakra-ui/core';
 
 const CalculatorDisplay = (props) => {
 
-    let {displayValue} = (props);
+    let { displayValue } = (props);
 
-    return(
+    return (
         <div>
             <Text
-                fontSize="lg"
+                fontSize={["xl", "lg"]}
                 color="gray.700"
                 textOverflow="ellipsis"
                 overflow="hidden"

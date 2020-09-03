@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text } from "@chakra-ui/core";
+import { Text, Box } from "@chakra-ui/core";
 
 import './Calculator.css';
 import CalculatorButtons from '../../components/CalculatorButtons';
@@ -56,21 +56,21 @@ class Calculator extends Component {
 
     render() {
         return (
-            <div>
+            <Box marginTop={["50px", "40px", "0"]}>
                 <NavBar />
                 <Text
                     className="text"
-                    fontSize="xl"
+                    fontSize={["2xl", "xl"]}
                     fontWeight="bold"
                     padding="10px"
                 >Simple Calculator</Text>
-                <div className="calculator">
+                <Box className="calculator" padding={["15px", "10px"]} borderRadius={["6px", "4px"]}>
                     <div className="displayDiv">
                         <CalculatorDisplay displayValue={this.state.displayValue} />
                     </div>
                     <CalculatorButtons onClick={this.buttonClickHandler} />
-                </div>
-            </div>
+                </Box>
+            </Box>
         );
     }
 }
