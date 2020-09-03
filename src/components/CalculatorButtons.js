@@ -10,7 +10,7 @@ const CalculatorButtons = (props) => {
     const buttonStyling = {
         variantColor: colorMode === "light" ? "pink" : "teal",
         variant: "solid",
-        size: "md",
+        fontSize: ["xl", "md"],
         margin: "2px",
         width: "20px",
     };
