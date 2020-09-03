@@ -1,8 +1,10 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import { Text } from "@chakra-ui/core";
 
 import './Calculator.css';
 import CalculatorButtons from '../../components/CalculatorButtons';
 import CalculatorDisplay from '../../components/CalculatorDisplay';
+import NavBar from '../../components/NavBar';
 
 class Calculator extends Component {
     state = {
@@ -14,7 +16,7 @@ class Calculator extends Component {
             this.setState({
                 displayValue: (eval(this.state.displayValue) || "") + ""
             });
-        } catch(e) {
+        } catch (e) {
             this.setState({
                 displayValue: "error"
             });
@@ -35,13 +37,13 @@ class Calculator extends Component {
 
 
     buttonClickHandler = (buttonName) => {
-        if(buttonName === "=") {
+        if (buttonName === "=") {
             this.calculate();
         }
-        else if(buttonName === "C") {
+        else if (buttonName === "C") {
             this.clear();
         }
-        else if(buttonName === "CE") {
+        else if (buttonName === "CE") {
             this.clearEntry();
         }
         else {
@@ -54,11 +56,20 @@ class Calculator extends Component {
 
     render() {
         return (
-            <div className="calculator">
-                <div className="displayDiv">
-                    <CalculatorDisplay displayValue={this.state.displayValue} />
+            <div>
+                <NavBar />
+                <Text
+                    className="text"
+                    fontSize="xl"
+                    fontWeight="bold"
+                    padding="10px"
+                >Simple Calculator</Text>
+                <div className="calculator">
+                    <div className="displayDiv">
+                        <CalculatorDisplay displayValue={this.state.displayValue} />
+                    </div>
+                    <CalculatorButtons onClick={this.buttonClickHandler} />
                 </div>
-                <CalculatorButtons onClick={this.buttonClickHandler} />
             </div>
         );
     }

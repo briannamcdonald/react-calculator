@@ -2,6 +2,10 @@ body {
   background-color: lavenderblush;
 }
 
+.dark-mode {
+  background-color: #4A5568;
+}
+
 .App {
   text-align: center;
 }

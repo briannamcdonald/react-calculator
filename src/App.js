@@ -1,22 +1,19 @@
 import React from 'react';
 import './App.css';
 
-import {ThemeProvider, CSSReset, Text} from '@chakra-ui/core';
+import { ThemeProvider, CSSReset, ColorModeProvider } from '@chakra-ui/core';
 import Calculator from './containers/Calculator/Calculator';
 
 function App() {
+
   return (
     <ThemeProvider>
       <CSSReset />
-      <div className="Div">
-        <Text
-          fontSize="xl"
-          fontWeight="bold"
-          color="gray.700"
-          padding="10px"
-        >Simple Calculator</Text>
-        <Calculator />
-      </div>
+      <ColorModeProvider>
+        <div className="Div">
+          <Calculator />
+        </div>
+      </ColorModeProvider>
     </ThemeProvider>
   );
 }

@@ -7,6 +7,10 @@
     text-align: left;
 }
 
+.dark-mode .calculator {
+    background-color: #171923;
+}
+
 .displayDiv {
     height: 34px;
     background-color: white;
@@ -17,3 +21,10 @@
     max-width: 176px;
 }
 
+.text {
+    color: #2D3748;
+}
+
+.dark-mode .text {
+    color: white;
+}
